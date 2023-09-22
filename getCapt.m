@@ -2,6 +2,7 @@
 function capt = getCapt (captSize)
 % Author Dr. Ken Owens
 % IM BATMAN
+% and im robin
 % The function getCapt computes and returns the captain with zero heading located at the origin in the form of a matirx.
 % The input parameters captSize sets the size of the captain. The output is a matrix in which
 % Each colunm of the returned matrix represents one point on the captain.
