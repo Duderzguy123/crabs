@@ -14,5 +14,6 @@ sizeCapt = 50;
 % input and output arguments.
 drawCapt(xCapt, yCapt, thetaCapt, sizeCapt)
 %*******************************************************
+%hello!!!!!!!!!!!
 endfunction
 
