@@ -3,13 +3,19 @@
 This read me describes the function of a game called crabs. It describes their inputs/outputs and how they work.
 
 function crabs(): void -> image
-Purpose: Using the drawMap and drawCapt functions it draws the captian and the map
+
+-Purpose: Using the drawMap and drawCapt functions it draws the captian and the map
 over the bg image file included
-Inputs: Nothing
-Outputs: The image of the game
-Dependencies of function: drawMap() and drawCapt()
-Example call: crabs
-Side Effects: none
+
+-Inputs: Nothing
+
+-Outputs: The image of the game
+
+-Dependencies of function: drawMap() and drawCapt()
+
+-Example call: crabs
+
+-Side Effects: none
 
 function drawCapt(): xCapt(int), yCapt(int), thetaCapt(int), sizeCapt(int) -> vector
 -Purpose: This function draws the Captain using the drawLine functions to connect the points from getCapt
