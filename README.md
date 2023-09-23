@@ -27,9 +27,9 @@ function drawLine(): p(int), q(int), color -> void
 -Example call: drawLine(10, 10, red)
 -Side Effects: plots a point between p and q, and sets the color 
 
-function drawMap(): 
--Purpose: 
--Inputs: 
+function drawMap(): imageName -> heght, weight
+-Purpose: This function draws the background map for the game using the image named imageName
+-Inputs: imageName which is the name of an image to draw the stuff over 
 -Outputs: 
 -Dependencies of function: imshow(), title(), imread()
 -Example call: 
@@ -39,7 +39,7 @@ function getCapt(): number(integer) -> matrix
 -Purpose: 
 -Inputs: The input is the Capt Size
 -Outputs: The output is Capt
--Dependencies of function:
+-Dependencies of function: 
 -Example call: capt = getCapt(10)
 -Side Effects: none
 
