@@ -43,7 +43,7 @@ function getCapt(): number(integer) -> matrix
 -Example call: capt = getCapt(10)
 -Side Effects: none
 
-function getTranslation(): 
+function getTranslation(): deltaX, deltaY, -> matrix
 -Purpose:
 -Inputs:
 -Outputs:
