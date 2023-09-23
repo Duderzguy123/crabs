@@ -20,11 +20,11 @@ function drawCapt(): xCapt(int), yCapt(int), thetaCapt(int), sizeCapt(int) -> ve
 -Side Effects: plots points
 
 function drawLine(): p(int), q(int), color -> void
--Purpose: 
--Inputs:
--Outputs:
--Dependencies of function:
--Example call: 
+-Purpose: Draws a line between p and q
+-Inputs: p which is a starting position, q which is an ending position, color
+-Outputs: none
+-Dependencies of function: plot(), set()
+-Example call: drawLine(10, 10, red)
 -Side Effects: plots a point between p and q, and sets the color 
 
 function drawMap(): 
