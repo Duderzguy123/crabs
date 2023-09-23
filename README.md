@@ -28,10 +28,10 @@ function drawLine(): p(int), q(int), color -> void
 -Side Effects: plots a point between p and q, and sets the color 
 
 function drawMap(): 
--Purpose:
--Inputs:
--Outputs:
--Dependencies of function:
+-Purpose: 
+-Inputs: 
+-Outputs: 
+-Dependencies of function: imshow(), title(), imread()
 -Example call: 
 -Side Effects:
 
