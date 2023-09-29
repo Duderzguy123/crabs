@@ -17,6 +17,7 @@ over the bg image file included
 
 -Side Effects: none
 
+
 function drawCapt(): xCapt(int), yCapt(int), thetaCapt(int), sizeCapt(int) -> vector
 -Purpose: This function draws the Captain using the drawLine functions to connect the points from getCapt
 
@@ -29,6 +30,7 @@ function drawCapt(): xCapt(int), yCapt(int), thetaCapt(int), sizeCapt(int) -> ve
 -Example call: drawCapt(xCapt, yCapt, thetaCapt, sizeCapt)
 
 -Side Effects: plots points
+
 
 function drawLine(): p(int), q(int), color -> void
 -Purpose: Draws a line between p and q
@@ -43,6 +45,7 @@ function drawLine(): p(int), q(int), color -> void
 
 -Side Effects: plots a point between p and q, and sets the color 
 
+
 function drawMap(): imageName -> heght, weight
 -Purpose: This function draws the background map for the game using the image named imageName
 
@@ -56,6 +59,7 @@ function drawMap(): imageName -> heght, weight
 
 -Side Effects:
 
+
 function getCapt(): number(integer) -> matrix
 -Purpose: 
 
@@ -68,6 +72,7 @@ function getCapt(): number(integer) -> matrix
 -Example call: capt = getCapt(10)
 
 -Side Effects: none
+
 
 
 function getTranslation(): deltaX, deltaY, -> matrix
