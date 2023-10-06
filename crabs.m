@@ -14,7 +14,9 @@ sizeCapt = 50;
 % input and output arguments.
 drawCapt(xCapt, yCapt, thetaCapt, sizeCapt)
 %*******************************************************
+
 %HELLOOOO!!!!!!!!!!
+captGraphics = drawCapt( xCapt, yCapt, thetaCapt, sizeCapt);
 cmd = "null"; % initial command
   while ( cmd != "Q") % While not quit, read keyboard and respond
     cmd = kbhit(); % Read the keyboard.
@@ -24,9 +26,9 @@ cmd = "null"; % initial command
         set( captGraphics(i), 'Visible', 'off' );
       endfor
     % move capt
-    % [xCapt, yCapt, thetaCapt] = moveCapt(cmd, xCapt, yCapt, thetaCapt);
+     %[xCapt, yCapt, thetaCapt] = moveCapt(cmd, xCapt, yCapt, thetaCapt);
     % draw new capt
-    %captGraphics = drawCapt( xCapt, yCapt, thetaCapt, sizeCapt);
+
     endif
   endwhile
 endfunction
