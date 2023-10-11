@@ -12,25 +12,26 @@ sizeCapt = 50;
 %*********************************************************
 % Put your call to drawCapt() here ..... You must give drawCapt its
 % input and output arguments.
-drawCapt(xCapt, yCapt, thetaCapt, sizeCapt)
+
 %*******************************************************
 
 %HELLOOOO!!!!!!!!!!
-captGraphics = drawCapt( xCapt, yCapt, thetaCapt, sizeCapt);
-cmd = "null"; % initial command
-  while ( cmd != "Q") % While not quit, read keyboard and respond
-    cmd = kbhit(); % Read the keyboard.
-    if( cmd == "w" || cmd == "a" || cmd == "d" ) %Captain has moved. Respond.
-      % erase old captain
-      for i=1:length( captGraphics )
-        set( captGraphics(i), 'Visible', 'off' );
-      endfor
-    % move capt
-     [xCapt, yCapt, thetaCapt] = moveCapt(cmd, xCapt, yCapt, thetaCapt);
-    % draw new capt
-     captGraphics = drawCapt( xCapt, yCapt, thetaCapt, sizeCapt);
-    endif
-  endwhile
-  close all
-endfunction
+captainGraphics = drawCapt (xCapt, yCapt, thetaCapt, sizeCapt);
+%*******************************************************
+cmd="null";
+while(cmd!="Q")
+  cmd=kbhit();
+  if(cmd=="w"||cmd=="a"||cmd=="d")
 
+   for i=1:length(captainGraphics)
+     set(captainGraphics(i),'Visible','off');
+   endfor
+   %move capt
+   [xCapt,yCapt,thetaCapt]=moveCapt(cmd,xCapt,yCapt,thetaCapt);
+   %draw new capt
+   captainGraphics=drawCapt(xCapt,yCapt,thetaCapt,sizeCapt);
+
+  endif
+endwhile
+close all
+endfunction
